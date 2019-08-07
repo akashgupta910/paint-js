@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primaryColor: #2B2B52;
+    --whiteColor: #fff;
+}
+
+body {
+    background: #586776;
+}
+
+/* ---------------- Navbar ----------------- */
+
+#nav-bar {
+    background: var(--primaryColor);
+    z-index: 10;
+}
+
+.nav-link {
+    color: var(--whiteColor) !important;
+    margin: 0 10px;
+}
+
+.nav-link input {
+    width: 60px;
+    background: transparent;
+    color: var(--whiteColor);
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--whiteColor);
+    letter-spacing: 1px;
+}
+
+.nav-link input::placeholder {
+    color: var(--whiteColor);
+}
+
+.navbar-brand {
+    background: transparent;
+    border: none;
+    outline: none !important;
+}
+
+.navbar-brand .fa {
+    color: var(--whiteColor);
+    font-size: 28px;
+}
+
+.navbar-brand .fa-caret-down {
+    font-size: 15px;
+    margin-left: 5px;
+}
+
+#nav-bar .dropdown-item .fa {
+    margin-right: 15px;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+#nav-bar .dropdown-item:focus {
+    background: var(--primaryColor) !important;
+    color: var(--whiteColor) !important;
+}
+
+#nav-bar .dropdown-item:focus .fa {
+    color: rgba(255, 255, 255, 1);
+}
+
+/* ------------------ SideBar ----------------- */
+
+#sidebar {
+    width: 4rem;
+    background: var(--primaryColor);
+    color: var(--whiteColor);
+    height: 92.8vh;
+}
+
+#sidebar ul {
+    padding: 10px 12px;
+    list-style-type: none;
+}
+
+#sidebar ul li {
+    margin: 13px 0;
+    font-size: 20px;
+    border: 1px solid rgba(117, 138, 162, 0.5);
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background: rgba(117, 138, 162, 0.5);
+    cursor: pointer;
+}
+
+#sidebar ul li:hover {
+    background: rgba(117, 138, 162, 1);
+    transition: 0.2s;
+}
+
+#sidebar ul li input {
+    background: transparent;
+    border: none;
+    width: 50px;
+    height: 50px;
+    margin-left: -5px;
+    margin-top: -5px;
+    outline: none;
+}
+
+#sidebar ul li .fa {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+/* ------------------ Canvas -------------- */
+
+#canvas {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: 30px;
+    margin-top: 30px;
+    transform: translate(-50%, -50%);
+    background: var(--whiteColor);
+}
