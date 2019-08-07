@@ -22,6 +22,7 @@ canvas.addEventListener('touchmove', draw);
 // When mouse button down --04 (i)
 function startDraw() {
     isDraw = true;
+    event.preventDefault();
 }
 
 // when mouse button up --04 (ii)
@@ -29,6 +30,7 @@ function endDraw() {
     isDraw = false;
     ctx.beginPath();
     ctx.shadowBlur = 0;
+    event.preventDefault();
 }
 
 // Variables
@@ -71,6 +73,8 @@ function draw(event) {
         ctx.lineTo(event.offsetX, event.offsetY);
         ctx.stroke();
     }
+    
+    event.preventDefault();
 }
 
 // Events to all tools buttons on the sidebar
