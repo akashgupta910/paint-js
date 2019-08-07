@@ -15,9 +15,9 @@ canvas.addEventListener('mouseup', endDraw);
 canvas.addEventListener('mousemove', draw);
 
 // Add events which work in phone
-canvas.addEventListener('touchstart', startDraw);
-canvas.addEventListener('touchend', endDraw);
-canvas.addEventListener('touchmove', draw);
+canvas.addEventListener('touchstart', startDraw, false);
+canvas.addEventListener('touchend', endDraw, false);
+canvas.addEventListener('touchmove', draw, false);
 
 // When mouse button down --04 (i)
 function startDraw() {
