@@ -10,9 +10,9 @@ canvas.height = window.innerHeight - 100;
 let isDraw = false;
 
 // Add events to the canvas --03
-//canvas.addEventListener('mousedown', startDraw);
-//canvas.addEventListener('mouseup', endDraw);
-//canvas.addEventListener('mousemove', draw);
+canvas.addEventListener('mousedown', startDraw);
+canvas.addEventListener('mouseup', endDraw);
+canvas.addEventListener('mousemove', draw);
 
 // Add events which work in phone
 canvas.addEventListener('touchstart', startDraw);
